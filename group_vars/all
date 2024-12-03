@@ -1,0 +1,7 @@
+db_user: badmancarter
+db_pass: June123#
+db_name: carter
+http_host: #3.141.3.212
+http_port: 80
+http_conf: default.conf
+
