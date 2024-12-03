@@ -163,8 +163,24 @@ resource "aws_instance" "ec2_instance4" {
 #  value = ["${aws_instance.ec2_instance1.*.public_ip}"]
 #  value = ["${}"]
 #}
-output "instance_public_ip" {
-  description = "The public IP address of the EC2 instance"
-  value       = aws_instance.my_instance.public_ip
+# Output Public IP for all instances
+output "instance1_public_ip" {
+  description = "Public IP address of Instance 1"
+  value       = aws_instance.instance1.public_ip
+}
+
+output "instance2_public_ip" {
+  description = "Public IP address of Instance 2"
+  value       = aws_instance.instance2.public_ip
+}
+
+output "instance3_public_ip" {
+  description = "Public IP address of Instance 3"
+  value       = aws_instance.instance3.public_ip
+}
+
+output "instance4_public_ip" {
+  description = "Public IP address of Instance 4"
+  value       = aws_instance.instance4.public_ip
 }
 
